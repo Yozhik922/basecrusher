@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASECRUSHER — Майнкрафт Анархия</title>
+    <style>
+        @import url('https://googleapis.com');
+
+        body {
+            background-image: url('https://giphy.com');
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: #100b0b;
+            color: #ffffff;
+            font-family: 'VT323', monospace;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 26px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.85);
+            border: 6px solid #4a0000;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            box-shadow: 0 0 20px #000000;
+        }
+
+        .health-bar {
+            margin: 10px auto 30px auto;
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .heart {
+            width: 28px;
+            height: 28px;
+            background-image: url('https://uncyc.org');
+            background-size: contain;
+            background-repeat: no-repeat;
+            image-rendering: pixelated;
+        }
+
+        .server-title {
+            color: #ffaa00;
+            font-size: 68px;
+            text-shadow: 4px 4px #000000;
+            margin-bottom: 5px;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            color: #55FF55;
+            font-size: 34px;
+            text-shadow: 2px 2px #000000;
+            margin-bottom: 30px;
+        }
+
+        p {
+            text-shadow: 2px 2px #000000;
+            color: #e0e0e0;
+            font-size: 28px;
+            line-height: 1.3;
+        }
+
+        .btn-minecraft {
+            display: inline-block;
+            background-color: #6c6c6c;
+            border: 4px solid;
+            border-color: #afafaf #3a3a3a #3a3a3a #afafaf; 
+            color: #e0e0e0;
+            padding: 12px 35px;
+            text-decoration: none;
+            margin-top: 25px;
+            text-shadow: 3px 3px #000000;
+            font-size: 38px;
+            cursor: pointer;
+            -webkit-user-select: none;
+            user-select: none;
+            width: 80%;
+            box-sizing: border-box;
+        }
+
+        .btn-minecraft:active, .btn-minecraft:hover {
+            background-color: #70a070;
+            color: #ffffff;
+            border-color: #a0ffa0 #305030 #305030 #a0ffa0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="health-bar">
+            <div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div>
+            <div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div>
+        </div>
+
+        <div class="server-title">BASECRUSHER</div>
+        <div class="subtitle">ГРИФЕРСКАЯ АНАРХИЯ СЛЕДУЮЩЕГО ПОКОЛЕНИЯ</div>
+
+        <p>⚔️ Собирай команду, готовь динамит и разноси базы врагов до бедрока!</p>
+        <p>Залетай в наш официальный Discord. Первые игроки получат эксклюзивные роли OWNER/CRUSHER и жирные киты на открытии!</p>
+
+        <div class="btn-minecraft" onclick="joinServer()">[ ЗАЛЕТЕТЬ В ДИСКОРД ]</div>
+    </div>
+
+    <script>
+        function joinServer() {
+            let clickSound = new Audio(https://soundboard.com);
+            clickSound.play();
+
+            setTimeout(() => {
+                window.open('https://discord.gg/BPhuJdVcD', '_blank');
+            }, 300);
+        }
+    </script>
+
+</body>
+</html>
